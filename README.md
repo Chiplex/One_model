@@ -1,4 +1,4 @@
-# Global_model para Codeigniter
+# One_model para Codeigniter
 Este fichero es una clase php que maximiza el dominio en el controlador.
 
 **Indice**
