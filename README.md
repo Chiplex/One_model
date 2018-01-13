@@ -27,18 +27,18 @@ Este fichero es una clase php que maximiza el dominio en el controlador.
 	- [Get_order](#get_order)
 
 ## Instalación
-El fichero Global_model.php se coloca dentro de la carpeta application/models/
+El fichero One_model.php se coloca dentro de la carpeta application/models/
 
 ## Inicialización
 Para inicializar la clase en el controlador, dentro del constructor o metodo tu cargas el modelo
 
-`$this->load->model('Global_model');`
+`$this->load->model('One_model');`
 
 ## Utilización
 ### Add
 Metodo para insertar datos en la table
 
-`$data = $this->Global_model->Add($table, $array)`
+`$data = $this->One_model->Add($table, $array)`
 * @param $table: String //Nombre de la table
 * @param $array: Array //Contiene el array a añadir
 * @return: Int
@@ -46,7 +46,7 @@ Metodo para insertar datos en la table
 ### Update
 Metodo para actualizar datos en la tabla
 
-`$data = $this->Global_model->Update($table, $array)`
+`$data = $this->One_model->Update($table, $array)`
 * @param $table: String //Nombre de la tabla
 * @param $where: Array //Condicion en array u objeto
 * @param $array: Array //Nombre del objeto a modificar
@@ -55,7 +55,7 @@ Metodo para actualizar datos en la tabla
 ### Delete
 Metodo para eliminar datos en la tabla
 
-`$data = $this->Global_model->Delete($table, $array)`
+`$data = $this->One_model->Delete($table, $array)`
 * @param $table: String //Nombre de la tabla
 * @param $where: Array //Condicion en array u objeto
 * @param $array: Array //Nombre del objeto a modificar
@@ -64,14 +64,14 @@ Metodo para eliminar datos en la tabla
 ### Add_batch
 Metodo para insertar datos en la table
 
-`$data = $this->Global_model->Add_batch($table, $array)`
+`$data = $this->One_model->Add_batch($table, $array)`
 * @param: $table: String //Nombre de la table
 * @param: $array: Array //Contiene el arrays a importar
 ***
 ### Get
 Metodo para obtener datos de una tabla
 
-`$data = $this->Global_model->Get($table, $allrows, $params)`
+`$data = $this->One_model->Get($table, $allrows, $params)`
 * @param $table: String //Nombre de la tabla
 * @param $allrows: Boolean //Si es TRUE? Recupera todas las filas: En otro caso recupera una fila
 * @param $params: Array //Contiene los valores el $params['limit'] y $params['offset']"
@@ -80,7 +80,7 @@ Metodo para obtener datos de una tabla
 ### Get_array
 Metodo para obtener datos de una tabla
 
-`$data = $this->Global_model->Get_array($table, $allrows, $params)`
+`$data = $this->One_model->Get_array($table, $allrows, $params)`
 * @param $table: String //Nombre de la tabla
 * @param $allrows: Boolean //Si es TRUE? Recupera todas las filas: En otro caso recupera una fila
 * @param $params: Array //Contiene los valores el $params['limit'] y $params['offset']"
@@ -89,14 +89,14 @@ Metodo para obtener datos de una tabla
 ### Get_count
 Metodo para obtener la cantidad de filas de una tabla
 
-`$data = $this->Global_model->Get_count($table)`
+`$data = $this->One_model->Get_count($table)`
 * @param $table: String //Nombre de la tabla
 * @return: int
 
 ### Get_where
 Metodo para obtener datos de una tabla con una condición
 
-`$data = $this->Global_model->Get_where($table, $where, $allrows, $params)`
+`$data = $this->One_model->Get_where($table, $where, $allrows, $params)`
 * @param $table: String //Nombre de la tabla
 * @param $where: Array //Contiene la condición a cumplir
 * @param $allrows: Boolean //Si es TRUE? Recupera todas las filas: En otro caso recupera una fila
@@ -106,7 +106,7 @@ Metodo para obtener datos de una tabla con una condición
 ### Get_where_array
 Metodo para obtener datos de una tabla con una condición
 
-`$data = $this->Global_model->Get_where_array($table, $where, $allrows, $params)`
+`$data = $this->One_model->Get_where_array($table, $where, $allrows, $params)`
 * @param $table: String //Nombre de la tabla
 * @param $where: Array //Contiene la condición a cumplir
 * @param $allrows: Boolean //Si es TRUE? Recupera todas las filas: En otro caso recupera una fila
@@ -116,7 +116,7 @@ Metodo para obtener datos de una tabla con una condición
 ### Get_where_count
 Metodo para obtener la cantidad de datos de una tabla con una condición
 
-`$data = $this->Global_model->Get_where_count($table, $where)`
+`$data = $this->One_model->Get_where_count($table, $where)`
 * @param $table: String //Nombre de la tabla
 * @param $where: Array //Contiene la condición a cumplir
 * @return: Int
@@ -124,7 +124,7 @@ Metodo para obtener la cantidad de datos de una tabla con una condición
 ### Get_select
 Metodo para obtener datos de una tabla con determinados campos
 
-`$data = $this->Global_model->Get_select($field, $table, $allrows, $params)`
+`$data = $this->One_model->Get_select($field, $table, $allrows, $params)`
 * @param $field: String //Nombre del campo o de los campos
 * @param $table: String //Nombre de la tabla
 * @param $allrows: Boolean //Si es TRUE? Recupera todas las filas: En otro caso recupera una fila
@@ -134,7 +134,7 @@ Metodo para obtener datos de una tabla con determinados campos
 ### Get_select_array
 Metodo para obtener datos de una tabla con determinados campos
 
-`$data = $this->Global_model->Get_select_array($field, $table, $allrows, $params)`
+`$data = $this->One_model->Get_select_array($field, $table, $allrows, $params)`
 * @param $field: String //Nombre del campo o de los campos
 * @param $table: String //Nombre de la tabla
 * @param $allrows: Boolean //Si es TRUE? Recupera todas las filas: En otro caso recupera una fila
@@ -144,7 +144,7 @@ Metodo para obtener datos de una tabla con determinados campos
 ### Get_select_where
 Metodo para obtener datos de una tabla con determinados campos
 
-`$data = $this->Global_model->Get_select_where($field, $table, $where, $allrows, $params)`
+`$data = $this->One_model->Get_select_where($field, $table, $where, $allrows, $params)`
 * @param $field: String //Nombre del campo o de los campos
 * @param $table: String //Nombre de la tabla
 * @param $where: Array //Contiene la condición a cumplir
@@ -155,7 +155,7 @@ Metodo para obtener datos de una tabla con determinados campos
 ### Get_select_where_array
 Metodo para obtener datos de una tabla con determinados campos
 
-`$data = $this->Global_model->Get_select_where_array($field, $table, $where, $allrows, $params)`
+`$data = $this->One_model->Get_select_where_array($field, $table, $where, $allrows, $params)`
 * @param $field: String //Nombre del campo o de los campos
 * @param $table: String //Nombre de la tabla
 * @param $where: Array //Contiene la condición a cumplir
@@ -166,7 +166,7 @@ Metodo para obtener datos de una tabla con determinados campos
 ### Get_join 
 (Experimental) Metodo para obtener datos de una tabla unida a otra tabla
 
-`$data = $this->Global_model->Get_join($field, $table1, $table2, $condition, $join, $allrows, $params)`
+`$data = $this->One_model->Get_join($field, $table1, $table2, $condition, $join, $allrows, $params)`
 * @param $field: String //Nombre del campo o de los campos
 * @param $table1: String //Nombre de la tabla
 * @param $table2: String //Nombre de la tabla
@@ -179,7 +179,7 @@ Metodo para obtener datos de una tabla con determinados campos
 ### Get_join_array
 (Experimental) Metodo para obtener datos de una tabla unida a otra tabla
 
-`$data = $this->Global_model->Get_join_array($field, $table1, $table2, $condition, $join, $allrows, $params)`
+`$data = $this->One_model->Get_join_array($field, $table1, $table2, $condition, $join, $allrows, $params)`
 * @param $field: String //Nombre del campo o de los campos
 * @param $table1: String //Nombre de la tabla
 * @param $table2: String //Nombre de la tabla
@@ -192,7 +192,7 @@ Metodo para obtener datos de una tabla con determinados campos
 ### Get_likes
 Metodo para obtener datos de una tabla con condición de busqueda
 
-`$data = $this->Global_model->Get_likes($titles, $table, $allrows, $params)`
+`$data = $this->One_model->Get_likes($titles, $table, $allrows, $params)`
 * @param $titles: Array //Contiene la condición de busqueda
 * @param $table: String //Nombre de la tabla
 * @param $allrows: Boolean //Si es true? Recupera todas las filas: Recupera una fila
@@ -202,7 +202,7 @@ Metodo para obtener datos de una tabla con condición de busqueda
 ### Get_likes_array
 Metodo para obtener datos de una tabla con condición de busqueda
 
-`$data = $this->Global_model->Get_likes_array($titles, $table, $allrows, $params)`
+`$data = $this->One_model->Get_likes_array($titles, $table, $allrows, $params)`
 * @param $titles: Array //Contiene la condición de busqueda
 * @param $table: String //Nombre de la tabla
 * @param $allrows: Boolean //Si es true? Recupera todas las filas: Recupera una fila
@@ -212,7 +212,7 @@ Metodo para obtener datos de una tabla con condición de busqueda
 ### Get_likes_count
 Metodo para obtener la cantidad de datos de una tabla con una condición de busqueda
 
-`$data = $this->Global_model->Get_likes_array($titles, $table)`
+`$data = $this->One_model->Get_likes_array($titles, $table)`
 * @param $titles: Array //Contiene la condición de busqueda
 * @param $table: String //Nombre de la tabla
 * @return: Int
@@ -220,7 +220,7 @@ Metodo para obtener la cantidad de datos de una tabla con una condición de busq
 ### Get_order
 Metodo para obtener datos de una tabla con condición de orden
 
-`$data = $this->Global_model->Get_order($field, $direction, $table, $result, $params, $count))`
+`$data = $this->One_model->Get_order($field, $direction, $table, $result, $params, $count))`
 * @param $field: String //Nombre del campo
 * @param $direction: String //Parametro de direccion
 * @param $result: Boolean //Si es true? retorna array de objetos: retorna array de arrays

@@ -13,13 +13,13 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 /**
- * Model Global
+ * One_Model
  *
- * @package		Global_model
+ * @package		One_model
  * @category	Model
  * @author		Roger Alexandro Arce Zeballos
  */
-class Global_model extends CI_Model 
+class One_model extends CI_Model 
 {
 	// ------------------------------------------------------------------------
 
@@ -587,5 +587,5 @@ class Global_model extends CI_Model
 	}
 }
 
-/* End of file Global_model.php */
-/* Location: ./application/models/Global_model.php */
+/* End of file One_model.php */
+/* Location: ./application/models/One_model.php */
